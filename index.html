@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>DPO RLAIF</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,27 +52,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DPO RL with Implicit Feedback</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://www.linkedin.com/in/amansinghalml/" target="_blank">Aman Singhal</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="https://www.linkedin.com/in/kalpanmukherjee/" target="_blank">Kalpan Mukherjee</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">NYU Courant<br>Deep Decision Making and Reinforcement Learning, Spring 2024</span>
                   </div>
 
                   <div class="column has-text-centered">
-                    <div class="publication-links">
+                    <!-- <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,10 +76,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> --> 
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +87,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/AmanSinghal927/DPO-RL" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,13 +101,13 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -124,12 +120,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -137,7 +133,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> --> 
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +144,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The use of Large Language Models (LLMs) in healthcare challenges traditional trust, 
+            because generated outputs are untraceable and sometimes inaccurate <a href="https://pubmed.ncbi.nlm.nih.gov/37816837/">[1]</a>. 
+            LLMs are trained on conflicting sources of information through
+            the maximum likelihood objective in an unsupervised fashion <a href="https://arxiv.org/pdf/2303.18223">[3]</a>. This is
+            typically followed by 1) Supervised Fine-Tuning 2) Preference sampling and
+            reward learning and 3) Reinforcement Learning optimization (RLHF) <a href="https://arxiv.org/pdf/2005.14165">[4]</a>.
+            Prior work such as <a href="https://arxiv.org/pdf/2307.15217">[5]</a> and <a href="https://arxiv.org/pdf/2306.16388">[6]</a> mapped the biases in human annotator preferences 
+            in the RLHF stage as the source of trickle-down biases in LLMs.
+            Furthermore, RLHF is a complex and often unstable procedure, and obtaining 
+            alignment healthcare data at scale is inherently expensive <a href="https://arxiv.org/pdf/2204.05862">[2]</a>. In
+            this project, we propose to explore updating the LLM policy network with the 
+            family of memory-efficient Direct Preference Optimization(DPO) algorithms <a href="https://arxiv.org/pdf/2305.18290">[7]</a>. 
+            To circumvent the need for human annotation we propose to
+            leverage Multiple Choice Questions and generate answers for each option
+            such that the answer corresponding to the correct option is the de facto chosen response equivalent.
+            To benchmark, we propose comparing against the base LLM on the in-distribution 
+            test set. Moreover, rigorous testing against datasets like MMLU
+            <a href="https://arxiv.org/pdf/2009.03300">[8]</a> splits for anatomy, clinical knowledge, medical genetics, etc. will enable an 
+            understanding of generalization trends.
           </p>
         </div>
       </div>
@@ -201,23 +215,23 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section>  -->
 <!-- End youtube video -->
 
 
