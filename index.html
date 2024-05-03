@@ -142,6 +142,14 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <figure>
+          <img src="static/images/llm_learn_flow.png" alt="Descriptive Text for Image" style="width: 70%; height: auto;">
+          <figcaption></figcaption>
+        </figure>
+        <figure>
+          <img src="static/images/preference_data_flow.png" alt="Descriptive Text for Image" style="width: 70%; height: auto;">
+          <figcaption></figcaption>
+        </figure>
         <div class="content has-text-justified">
           <p>
             The use of Large Language Models (LLMs) in healthcare challenges traditional trust, 
@@ -171,34 +179,7 @@
 </section>
 <!-- End paper abstract -->
 
-<div style="text-align: center; padding-top: 4%; padding-bottom: 4%;">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">Introduction</h2> 
-      <div class="content has-text-justified">
-        <p>
-          
-        </p>
-      </div>
-      <figure>
-        <img src="static/images/llm_learn_flow.png" alt="Descriptive Text for Image" style="width: 60%; height: auto;">
-        <figcaption></figcaption>
-      </figure>
-      <figure>
-        <img src="static/images/preference_data_flow.png" alt="Descriptive Text for Image" style="width: 60%; height: auto;">
-        <figcaption></figcaption>
-      </figure>
-      <div class="content has-text-justified" style="padding-top: 4%;">
-        <p>
-          
-        </p>
-      </div>
-    </div>
-    </div>
-</div>
-
-
-<div style="text-align: center; padding-top: 4%; padding-bottom: 4%;">
+<div style="text-align: center; padding-top: 4%; ">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">Direct Preference Optimisation (DPO)</h2> 
@@ -237,7 +218,7 @@
     </div>
 </div>
 
-<div style="text-align: center; padding-top: 4%; padding-bottom: 4%;">
+<div style="text-align: center; padding-top: 4%; ">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">Experiment Setup</h2> 
@@ -260,7 +241,7 @@
 </div>
 
 
-<div style="text-align: center; padding-top: 4%; padding-bottom: 4%;">
+<div style="text-align: center; padding-top: 4%; ">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">RLAIF - Open World Problem</h2> 
@@ -278,22 +259,32 @@
         <img src="static/images/IMDB.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
         <figcaption>Figure 2: RLAIF - Open World Problem</figcaption>
       </figure>
-      <div class="content has-text-justified" style="padding-top: 4%;">
-        <p>
-          [TODO] Discussion on result...
-          [TODO] Discussion on beta: (Art 3): Graphs on num_tokens and average sentiment 
-          Reward hacking for some values of beta - give a reason - then why?          
-        </p>
-      </div>
       <figure>
         <img src="static/images/rlaif_reward_hacking.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
         <figcaption>Figure 3: RLAIF - Reward Hacking</figcaption>
       </figure>
+      <div class="content has-text-justified" style="padding-top: 4%;">
+        <p>
+          As showcased in Figure 3, the Beta value affects the tradeoff between exploration and exploitation. Higher values of beta enable higher exploration, but at the cost of higher exploitation. 
+          This is apparent in the eval_ngrams plot where the number of unique ngrams and plotted against training steps for various values of beta. 
+          We notice that for beta=0.01, the number of unqiuue ngrams is significantly lower than for higher values of beta.
+        </p>
+      </div>
+      <figure>
+        <img src="static/images/reward_hacking_text.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
+        <figcaption>Figure 4: Reward Hacking Example</figcaption>
+      </figure>
+      <div class="content has-text-justified" style="padding-top: 4%;">
+        <p>
+          Comparing the outputs of models trained with two values of beta - 0.01 and 0.6, we can see that the model trained with beta=0.01 repeats some phrases like
+          "out of 10" and "miss miss missing miss". Whereas the model with beta=0.6 generates a much more unique and nuanced response.
+          It touches on relevant points like "acting", "direction", "soundtrack", "cinematography".
+      </div>
     </div>
     </div>
 </div>
 
-<div style="text-align: center; padding-top: 4%; padding-bottom: 4%;">
+<div style="text-align: center; padding-top: 4%; ">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">RLIF - Closed World Problem</h2> 
@@ -446,16 +437,16 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -471,7 +462,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
