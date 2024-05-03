@@ -294,6 +294,10 @@
       <h2 class="title is-3" style="padding-top: 2%; padding-bottom: 4%">RLIF - Closed World Problem</h2> 
       <div class="content has-text-justified">
         <p>
+          <figure>
+            <img src="static/images/medical_qna.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
+            <figcaption>Figure 5: Reward Margins</figcaption>
+          </figure>
          The <a href="https://huggingface.co/datasets/openlifescienceai/Med-HALT">Medhalt dataset</a> is a multinational dataset derived from medical examinations across various countries and includes multiple choice questions (MCQs) from NEET, AIIMS PG, USMILE, TWMLE etc.
           The dataset contains a total of 16,000 MCQs (Question, Options, Correct Option index). We use a base Llama-2-13-B model to generate "explainations"/"reasons" for why each of the options (whether correct or not) should be the correct choice. Llama-2 is at such a junction
           point in its training and capabilities that it doesn't contradict the prompt (eg. "Actually this option cannot be the correct one") but is still able to hullucinate believable explanations for why the option is correct.
