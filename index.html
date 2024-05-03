@@ -257,11 +257,11 @@
       </div>
       <figure>
         <img src="static/images/IMDB.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-        <figcaption>Figure 2: RLAIF - Open World Problem</figcaption>
+        <figcaption>Figure 1: RLAIF - Open World Problem</figcaption>
       </figure>
       <figure>
         <img src="static/images/rlaif_reward_hacking.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-        <figcaption>Figure 3: RLAIF - Reward Hacking</figcaption>
+        <figcaption>Figure 2: RLAIF - Reward Hacking</figcaption>
       </figure>
       <div class="content has-text-justified" style="padding-top: 4%;">
         <p>
@@ -272,7 +272,7 @@
       </div>
       <figure>
         <img src="static/images/reward_hacking_text.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-        <figcaption>Figure 4: Reward Hacking Example</figcaption>
+        <figcaption>Figure 3: Reward Hacking Example</figcaption>
       </figure>
       <div class="content has-text-justified" style="padding-top: 4%;">
         <p>
@@ -282,7 +282,7 @@
       </div>
       <figure>
         <img src="static/images/sentiment_margins.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-        <figcaption>Figure 5: Reward Margins</figcaption>
+        <figcaption>Figure 4: Reward Margins</figcaption>
       </figure>
     </div>
     </div>
@@ -309,26 +309,21 @@
       </div>
       <figure>
         <img src="static/images/Medhalt.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-        <figcaption>Figure 7: RLIF - Closed World Problem</figcaption>
+        <figcaption>Figure 5: RLIF - Closed World Problem</figcaption>
       </figure>
       <div class="content has-text-justified" style="padding-top: 4%;">
-        <p>
-          [TODO] Dicussion on result...
-          [TODO] Shocking result: OOD generalisation to MMLU is same as if a GPT-2 model was actually fine-tuned on MMLU
-          [TODO] Chart (Art 4): baseline GPT-2 as good as random, finetuned on non-MMLU data (30%), DPO (x%)
-          Eval methodology: max(log probs on MCQ choices|question) == correct answer choice
-          Zero out the log probs for the question/prompt
-          <figure>
-            <img src="static/images/performance_medical.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-            <figcaption>Figure 8: RLIF - MMLU Accuracy</figcaption>
+          <figure style="display: flex; justify-content: space-around;">
+            <img src="static/images/performance_medical.png" alt="Descriptive Text for Image" style="width: 30%; height: auto;">
+            <!-- <figcaption>Figure 8: RLIF - MMLU Accuracy</figcaption> -->
+            <img src="static/images/mmlu_1.png" alt="Descriptive Text for Image" style="width: 30%; height: auto;">
+            <img src="static/images/mmlu_2.png" alt="Descriptive Text for Image" style="width: 27%; height: auto;">
+            <!-- <figcaption>Figure 9: RLIF - Impact of Learning Rate 1e-6 (left) & 5e-5(right)</figcaption> -->
           </figure>
+          <p>
+            The model trained on DPO with explainations performs the best on an MMLU test dataset with an increment of 5.5%
+            over Base GPT and 1.5% over SFT on options.
+          </p>
 
-          <figure>
-            <img src="static/images/learning_rate_medical.png" alt="Descriptive Text for Image" style="width: 80%; height: auto;">
-            <figcaption>Figure 9: RLIF - Impact of Learning Rate 1e-6 (left) & 5e-5(right)</figcaption>
-          </figure>
-          
-        </p>
       </div>
     </div>
     </div>
